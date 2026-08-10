@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "project": {
+    "title": "Demo: carbonate transfer hypothesis",
+    "description": "A deliberately small example showing how claims stay separated by evidence status.",
+    "created_at": "2026-08-10T00:00:00Z",
+    "updated_at": "2026-08-10T00:00:00Z"
+  },
+  "entries": [
+    {
+      "id": "F-001",
+      "kind": "literature_fact",
+      "claim": "A cited study reports carbonate adsorption on the catalyst surface.",
+      "source": {
+        "citation": "Example et al., Journal of Demonstrations (2026)",
+        "doi": "10.1234/example.2026.001"
+      },
+      "basis": [],
+      "test_plan": [],
+      "resolution_plan": [],
+      "tags": ["adsorption"],
+      "notes": "The source supports adsorption, not the complete transfer mechanism.",
+      "created_at": "2026-08-10T00:00:00Z"
+    },
+    {
+      "id": "I-001",
+      "kind": "formal_inference",
+      "claim": "The reported adsorption makes surface activation a plausible intermediate step.",
+      "source": {},
+      "basis": ["F-001"],
+      "test_plan": [],
+      "resolution_plan": [],
+      "tags": ["mechanism"],
+      "notes": "This is an inference from the cited fact, not a reported observation.",
+      "created_at": "2026-08-10T00:00:00Z"
+    },
+    {
+      "id": "H-001",
+      "kind": "hypothesis",
+      "claim": "Carbonate oxygen may be retained in the product-forming bond.",
+      "source": {},
+      "basis": ["I-001"],
+      "test_plan": ["Repeat with 18O-labelled carbonate and compare product isotopologues."],
+      "resolution_plan": [],
+      "tags": ["isotope-test"],
+      "notes": "A discriminating isotope experiment is required.",
+      "created_at": "2026-08-10T00:00:00Z"
+    },
+    {
+      "id": "G-001",
+      "kind": "evidence_gap",
+      "claim": "The current data do not establish whether formaldehyde is a co-product.",
+      "source": {},
+      "basis": [],
+      "test_plan": [],
+      "resolution_plan": ["Run an independent formaldehyde standard and a product-mass balance."],
+      "tags": ["co-product"],
+      "notes": "Keep this gap visible until the control experiment is complete.",
+      "created_at": "2026-08-10T00:00:00Z"
+    }
+  ]
+}

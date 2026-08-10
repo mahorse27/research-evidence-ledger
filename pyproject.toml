@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-evidence-ledger"
+version = "0.1.0"
+description = "An auditable CLI for separating research facts, inferences, hypotheses, and evidence gaps."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "mahorse27" }
+]
+keywords = ["research", "evidence", "provenance", "reproducibility", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+evidence-ledger = "evidence_ledger.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mahorse27/research-evidence-ledger"
+Issues = "https://github.com/mahorse27/research-evidence-ledger/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
