@@ -1,5 +1,9 @@
 # Research Evidence Ledger
 
+[![CI](https://github.com/mahorse27/research-evidence-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/mahorse27/research-evidence-ledger/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2F6F4E)](LICENSE)
+
 Research notes often mix four different things: what a source actually reports, what follows formally from those reports, what is still a hypothesis, and what evidence is missing. **Research Evidence Ledger** is a small, dependency-free Python CLI that keeps those states separate and makes the provenance auditable.
 
 ## Why this exists
@@ -52,6 +56,8 @@ The project intentionally keeps the runtime dependency-free. Contributions that 
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md), open an issue describing the evidence workflow you need, and include a minimal fixture for new validation rules.
+
+Release history is recorded in [CHANGELOG.md](CHANGELOG.md). Researchers may cite a specific release using the metadata in [CITATION.cff](CITATION.cff).
 
 ## Security and privacy
 

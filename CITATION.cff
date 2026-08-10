@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the release you used."
+title: "Research Evidence Ledger"
+type: software
+version: 0.1.0
+date-released: 2026-08-10
+authors:
+  - name: "301best"
+    alias: "mahorse27"
+repository-code: "https://github.com/mahorse27/research-evidence-ledger"
+url: "https://github.com/mahorse27/research-evidence-ledger"
+license: MIT
+keywords:
+  - research provenance
+  - evidence audit
+  - reproducibility
+  - scientific software
